@@ -9,7 +9,7 @@ e desenvolver um projeto de automação.
 
 ### 📝 Ambiente
 
-A página web escolhida para por em prática os testes é http://automationpractice.com/index.php
+A página escolhida para por em prática os testes é do próprio [Selenium](https://www.selenium.dev/)
 
 ### 🛠 Tecnologias
 
