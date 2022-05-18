@@ -1,5 +1,7 @@
 # example-selenium-java-junit-gradle
 
+[![Selenium Test CI](https://github.com/vilsonjunior/example-selenium-java-junit-gradle/actions/workflows/ciTest.yml/badge.svg)](https://github.com/vilsonjunior/example-selenium-java-junit-gradle/actions/workflows/ciTest.yml)
+
 ### Descrição
 
 Demonstração de um projeto onde utiliza-se: Selenium, Java, JUnit e Gradle.
