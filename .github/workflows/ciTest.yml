@@ -38,7 +38,7 @@ jobs:
         name: artifact-test
         path: build/reports/tests/test/index.html
     - name: Publish Test Report
-      uses: action-junit-report@v2
+      uses: mikepenz/action-junit-report@v2
       if: always()
       with:
         report_paths: '**/build/reports/tests/test/index.html'
