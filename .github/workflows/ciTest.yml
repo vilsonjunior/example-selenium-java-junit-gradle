@@ -31,5 +31,6 @@ jobs:
       run: ./gradlew build
     - name: Run tests
       run: ./gradlew test
+    - name: Test reports
       if: success() || failure()
       uses: actions/upload-artifact@v2
