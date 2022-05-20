@@ -41,5 +41,5 @@ jobs:
       uses: mikepenz/action-junit-report@v2
       if: always()
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.token_ci_test }}
         report_paths: '**/build/test-results/test/TEST-*.xml'
