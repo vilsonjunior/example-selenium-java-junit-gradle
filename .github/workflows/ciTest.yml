@@ -21,14 +21,18 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+
     - name: Install Google Chrome
       run: |
         chmod +x ./scripts/InstallChrome.sh
          ./scripts/InstallChrome.sh
+
     - name: Execute permission gradle in CI
       run: chmod +x ./gradlew
+
     - name: Build with Gradle
       run: ./gradlew build
+
     - name: Run tests
       run: ./gradlew test
 
@@ -38,22 +42,3 @@ jobs:
       with:
         name: 'test-report'
         path: build/reports/tests/test/*
-
-
-#    - name: Test reports
-#      if: success() || failure()
-#      uses: actions/upload-artifact@v2
-#      with:
-#        name: artifact-test
-#        path: build/reports/tests/test/index.html
-#
-#    - name: Use token
-#      uses: actions/labeler@v2
-#      with:
-#        repo-token: ${{ secrets.GITHUB_TOKEN }}
-#
-#    - name: Publish Test Report
-#      uses: mikepenz/action-junit-report@v2
-#      if: always()
-#      with:
-#        report_paths: '**/build/test-results/test/TEST-*.xml'
