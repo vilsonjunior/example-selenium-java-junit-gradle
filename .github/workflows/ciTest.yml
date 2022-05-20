@@ -34,3 +34,6 @@ jobs:
     - name: Test reports
       if: success() || failure()
       uses: actions/upload-artifact@v2
+      with:
+        name: artifact-test
+        path: build/reports/tests/test/index.html
