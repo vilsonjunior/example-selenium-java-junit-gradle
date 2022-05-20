@@ -37,9 +37,14 @@ jobs:
       with:
         name: artifact-test
         path: build/reports/tests/test/index.html
+
+    - name: Use token
+      uses: actions/labeler@v2
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Publish Test Report
       uses: mikepenz/action-junit-report@v2
       if: always()
       with:
-        repo-token: ${{ secrets.token_ci_test }}
         report_paths: '**/build/test-results/test/TEST-*.xml'
