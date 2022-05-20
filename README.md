@@ -1,6 +1,6 @@
 # example-selenium-java-junit-gradle
 
-[![CI Test](https://github.com/vilsonjunior/example-selenium-java-junit-gradle/actions/workflows/ciTest.yml/badge.svg)](https://github.com/vilsonjunior/example-selenium-java-junit-gradle/actions/workflows/ciTest.yml)
+[![Selenium Test CI](https://github.com/vilsonjunior/example-selenium-java-junit-gradle/actions/workflows/ciTest.yml/badge.svg)](https://github.com/vilsonjunior/example-selenium-java-junit-gradle/actions/workflows/ciTest.yml)
 
 ### Descrição
 
